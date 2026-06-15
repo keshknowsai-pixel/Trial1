@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Manrope", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom Color Palette to match the Inner Story Light Architecture spec */
+  --color-brand-surface: #fcf9f8;
+  --color-brand-surface-dim: #dcd9d9;
+  --color-brand-surface-bright: #fcf9f8;
+  --color-brand-surface-container-lowest: #ffffff;
+  --color-brand-surface-container-low: #f6f3f2;
+  --color-brand-surface-container: #f0eded;
+  --color-brand-surface-container-high: #eae7e7;
+  --color-brand-surface-container-highest: #e5e2e1;
+  --color-brand-ink: #1c1b1b;
+  --color-brand-primary: #0058bc;
+  --color-brand-primary-container: #0070eb;
+  --color-brand-secondary: #006687;
+  --color-brand-secondary-container: #60cdff;
+  --color-brand-tertiary: #894d00;
+  --color-brand-outline: #717786;
+  --color-brand-outline-variant: #c1c6d7;
+}
+
+/* Custom global styles to ensure smooth scrolling and premium transitions */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-surface);
+  color: var(--color-brand-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar styling for architectural elegance */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-surface-container-low);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-outline-variant);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-outline);
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "The Inner Story",
+  "description": "Architectural Minimalism for the Modern Soul. Curated premium interior spaces, high-end residential designs, and bespoke villa renovations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
